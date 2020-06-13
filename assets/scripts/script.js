@@ -36,6 +36,7 @@ $("document").ready(function () {
     );
     $(".container").append(newRow);
 
+    // setting the row color based on the current time
     if (hour == currentHour) {
       $("#" + hour).css("background-color", "red");
     } else if (hour < currentHour) {
