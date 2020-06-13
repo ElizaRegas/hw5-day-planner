@@ -52,18 +52,18 @@ $("document").ready(function () {
     }
   }
 
-  //
+  // displaying the current date in the jumbotron
   function displayCurrentDate() {
     var currentDate = moment().format("dddd, MMMM Do, YYYY");
     $("#currentDay").text(currentDate);
   }
   displayCurrentDate();
 
+  // setting key value pairs to local storage
   $(".btn").on("click", function () {
     var buttonId = $(this).attr("id");
     var textId = buttonId.replace("b", "a");
     var textContent = $("#" + textId).children()[0].value;
-    //setting items in the local storage
     localStorage.setItem(textId, textContent);
   });
 });
