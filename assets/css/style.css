@@ -43,11 +43,6 @@ input {
   text-align: center;
 }
 
-.future {
-  background-color: #77dd77;
-  color: white;
-}
-
 .hour {
   background-color: #ffffff;
   color: #000000;
@@ -68,15 +63,6 @@ input {
   margin: .5em 2em;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-}
-
-.past {
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
 }
 
 .row {
