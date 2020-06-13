@@ -28,6 +28,7 @@ $("document").ready(function () {
         hour + "b"
       }'><i class="fas fa-save"></i></button></div>`
     );
+    // appending rows to the html
     var newRow = $(`<div class='row' id='${hour}'></div>`).append(
       hourColumn,
       scheduleColumn,
