@@ -38,11 +38,11 @@ $("document").ready(function () {
 
     // setting the row color based on the current time
     if (hour == currentHour) {
-      $("#" + hour).css("background-color", "red");
+      $("#" + hour).css("background-color", "#ff6961;");
     } else if (hour < currentHour) {
       $("#" + hour).css("background-color", "#d3d3d3");
     } else {
-      $("#" + hour).css("background-color", "green");
+      $("#" + hour).css("background-color", "#77dd77");
     }
 
     var savedText = window.localStorage.getItem(hour + "a");
