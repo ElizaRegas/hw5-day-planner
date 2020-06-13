@@ -45,13 +45,14 @@ $("document").ready(function () {
       $("#" + hour).css("background-color", "#77dd77");
     }
 
+    // getting the local storage information
     var savedText = window.localStorage.getItem(hour + "a");
-    console.log(savedText);
     if (savedText !== null) {
       $("#" + hour + "a input").val(savedText);
     }
   }
 
+  //
   function displayCurrentDate() {
     var currentDate = moment().format("dddd, MMMM Do, YYYY");
     $("#currentDay").text(currentDate);
