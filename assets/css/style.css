@@ -112,7 +112,7 @@ input {
   text-align: right;
   padding: .5em;
 }
-
+/* ids */
 #currentDay {
   margin-bottom: 0em;
   font-size: 2em;
