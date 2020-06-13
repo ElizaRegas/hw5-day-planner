@@ -4,13 +4,28 @@ body {
   line-height: 1;
 }
 
-textarea{
+input {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
   padding: 10px;
+  width: 100%;
+  margin: auto;
+}
+
+.btn {
+  border-radius: 0rem .25rem .25rem 0rem;
+}
+
+.btn-info {
+  color: #fff !important;
+  background-color: #17a2b8 !important;
+  border-color: #17a2b8 !important;
+}
+
+.col-sm-2 {
+  margin: auto;
 }
 
 .jumbotron {
@@ -32,7 +47,7 @@ textarea{
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  height: 2em;
   border-top: 1px solid white;;
 }
 
