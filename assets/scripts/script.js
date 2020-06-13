@@ -10,17 +10,16 @@ $('document').ready(function() {
 function createTimeSlots(i, hour) {
   var currentHour = moment().format('k');
   var displayHour = hour > 12 ? hour - 12 : hour;
-  var hourColumn = $("<div class='col-sm-2'></div>").text(displayHour + ":00");
+  var hourColumn = $("<div class='col-sm-2 timeCol'></div>").text(displayHour + ":00");
   scheduleColumn = $(`<div class='col-sm-8 schedule' id='${hour + "a"}'><input class="inputText"></div>`);
-  var saveColumn = $(`<div class="col-sm-2"><button type="button" class="btn btn-info" id='${hour + "b"}'>Save</button></div>`)
+  var saveColumn = $(`<div class="col-sm-2" id="save"><button type="button" class="btn btn-info" id='${hour + "b"}'><i class="fas fa-save"></i></button></div>`)
   var newRow = $(`<div class='row' id='${hour}'></div>`).append(hourColumn, scheduleColumn, saveColumn);
-  var hr = $('<hr>');
-  $('.container').append(newRow, hr);
+  $('.container').append(newRow);
 
   if (hour == currentHour) {
     $("#" + hour).css("background-color","red");
   } else if (hour < currentHour) {
-    $("#" + hour).css("background-color","grey");
+    $("#" + hour).css("background-color","#d3d3d3");
   } else {
     $("#" + hour).css("background-color","green");
   }
@@ -33,7 +32,7 @@ function createTimeSlots(i, hour) {
 }
 
 function displayCurrentDate() {
-  var currentDate = moment().format('MMMM Do YYYY');
+  var currentDate = moment().format('dddd, MMMM Do, YYYY');
   $('#currentDay').text(currentDate);
 }
 displayCurrentDate();
