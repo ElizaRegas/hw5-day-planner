@@ -22,7 +22,7 @@ To access the day planner,
 
 The functionality for this site was written by Elizabeth Regas. 
 
-Functionality requirements were specified by the Trilogy academic curriculum department. The css and html was also supplied by the Trilogy academic curriculum department.
+Functionality requirements, css, and html were supplied by the Trilogy academic curriculum department.
 
 ## MIT License
 
